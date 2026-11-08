@@ -49,13 +49,13 @@ This repository documents the architectural design, security policy implementati
 
 ### Prerequisites
 
-* **Hypervisor**: VMware ESXi (or VMware Workstation / VirtualBox) to host isolated virtual switches and VM instances[cite: 3].
+* **Hypervisor**: VMware ESXi (or VMware Workstation / VirtualBox) to host isolated virtual switches and VM instances[.: 3].
 * **Ubuntu Server VM (Gateway & Security Server)**: 
-  * Dual Virtual Network Interfaces: `ens33` (WAN interface connected to external internet/DHCP) and `ens37` (LAN interface configured with static IP `192.168.10.1`)[cite: 3].
-  * Installed Packages: `iptables`, `squid`[cite: 3].
+  * Dual Virtual Network Interfaces: `ens33` (WAN interface connected to external internet/DHCP) and `ens37` (LAN interface configured with static IP `192.168.10.1`).
+  * Installed Packages: `iptables`, `squid`.
 * **Kali Linux VM (Client Workstation)**: 
-  * Single Network Interface: `eth0` configured with static IP `192.168.10.10` pointing to `192.168.10.1` as the default gateway[cite: 3].
-  * Configured Browser Proxy: HTTP/HTTPS proxy directed to `192.168.10.1` on port `3128`[cite: 3].
+  * Single Network Interface: `eth0` configured with static IP `192.168.10.10` pointing to `192.168.10.1` as the default gateway.
+  * Configured Browser Proxy: HTTP/HTTPS proxy directed to `192.168.10.1` on port `3128`.
 
 ---
 
